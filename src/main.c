@@ -73,7 +73,7 @@ int main(int argc, char **argv) {
 
   /*Recommendations */
   printf("Generating recommendations...\n");
-  success = recommendation_genertor_analyze(ctx);
+  success = recommendation_generator_analyze(ctx);
   if (!success) {
     fprintf(stderr, "Recommendation generation failed\n");
     for (int i = 0; i < entry_count; i++) log_parser_free_entry(entries[i]);

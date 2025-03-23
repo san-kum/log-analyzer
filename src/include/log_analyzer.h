@@ -74,7 +74,7 @@ bool pattern_detector_analyze(LogAnalyzerContext *ctx, LogEntry **entries,
 Pattern *pattern_detector_get_patterns(LogAnalyzerContext *ctx,
                                        int *pattern_count);
 
-bool recommendation_genertor_analyze(LogAnalyzerContext *ctx);
+bool recommendation_generator_analyze(LogAnalyzerContext *ctx);
 Recommendation *recommendation_generator_get_recommendations(
     LogAnalyzerContext *ctx, int *recommendation_count);
 

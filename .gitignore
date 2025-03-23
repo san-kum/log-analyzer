@@ -1,1 +1,4 @@
-build/
+log_analyzer
+*.o
+*.txt
+*.txt.detailed

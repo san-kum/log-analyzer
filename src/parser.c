@@ -5,6 +5,8 @@
 
 #include "include/log_analyzer.h"
 
+#define _POSIX_C_SOURCE 200809L
+
 static char *trim_whitespace(char *str) {
   char *end;
 

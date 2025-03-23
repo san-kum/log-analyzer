@@ -58,7 +58,7 @@ bool report_generator_write_summary(LogAnalyzerContext *ctx) {
     for (i = 0; i < ctx->recommendation_count && i < 5; i++) {
       fprintf(fp, "[%d] %s Priority: %d\n", i + 1,
               ctx->recommendations[i].title, ctx->recommendations[i].priority);
-      printf(fp, "    %s\n\n", ctx->recommendations[i].action);
+      fprintf(fp, "    %s\n\n", ctx->recommendations[i].action);
     }
   } else {
     fprintf(fp, "No recommendations generated.\n\n");
